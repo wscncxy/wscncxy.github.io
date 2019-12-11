@@ -1,5 +1,5 @@
 theme: jekyll-theme-architect
-host: 192.168.2.11
+host: localhost
 github: 
     is_project_page: true
     repository_url: https://github.com/wscncxy
