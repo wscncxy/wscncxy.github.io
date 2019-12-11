@@ -1,7 +1,0 @@
----
-layout: default
-title:  "Linux常用命令123!"
-date:   2018-12-06 13:10:54 +0800
-categories: jekyll update
----
-this test
