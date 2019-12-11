@@ -6,4 +6,3 @@ github:
     repository_name: SAI's GitHub
     owner_name: SAI
 paginate: 2
-paginate_path: "blog/page:num"
