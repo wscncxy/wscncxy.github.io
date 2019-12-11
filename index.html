@@ -26,20 +26,31 @@ categories: original
 
     <!-- 分页链接 -->
     <div class="pagination">
-        {% if paginator.previous_page %}
-            {% if paginator.previous_page==1 %}
-            <a href="/" class="previous">Previous</a>
-            {% else %}
-            <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+        <div style="float: left"></div>
+            {% if paginator.previous_page %}
+                {% if paginator.previous_page==1 %}
+                <a href="/" class="previous">Previous</a>
+                {% else %}
+                <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
-            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-            <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-        {% endif %}
-        <span style="">有</span>{{ paginator.total_pages }} <span>页</span>
-        <span style="">有</span>{{ paginator.total_posts }} <span>篇文章</span>
+                <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+                <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+            {% endif %}
+        </div>
+        <div style="float: right">
+            <table>
+                <tr>
+                    <td>有</td>
+                    <td>{{ paginator.total_pages }}</td>
+                    <td>页</td>
+                    <td></td>
+                    <td>{{ paginator.total_posts }}</td>
+                    <td>篇文章</td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 {%- endif -%}
 
