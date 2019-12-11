@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "JVM故障诊断与优化笔记一"
+title:  "JVM故障诊断与优化笔记三"
 date:   2012-12-12 20:10:54 +0800
 categories: jekyll update
 ---
